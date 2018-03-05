@@ -1,13 +1,6 @@
 #include "sum.h"
 
-int sum(int begin,int end)
-{
-	int result=0;
-	for(begin; begin<=end; begin++)
-	{
-		result+=begin;
-	}
-	return result;
+int sum(int begin, int end){
+	return end*(end+1)/2 - begin*(begin-1)/2;
 }
-
 
